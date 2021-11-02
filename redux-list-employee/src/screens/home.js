@@ -9,7 +9,6 @@ import {
 import * as actionCreateEmp from '../actions/create_emp';
 import { connect } from 'react-redux';
 
-
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -45,11 +44,11 @@ class Home extends Component {
                 <hr />
                 <List>
                     <ListItem disablePadding>
-                        {<ul>
+                        {/* {<ul>
                             {this.props.employees.map(
                                 (employee, i) => <li key={i}>{employee.name}</li>)
                             }
-                        </ul>}
+                        </ul>} */}
                     </ListItem>
                 </List>
 
