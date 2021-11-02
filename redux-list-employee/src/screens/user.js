@@ -9,7 +9,7 @@ function User() {
         <div className="App">
             <br />
             <button onClick={() => dispatch(getUsersFetch())}>Get Users</button>
-            <div>Users: {users.map((user => (<div>{user.id}</div>)))}</div>
+            <div>Users: {users.map((user => (<div>{user.name}</div>)))}</div>
         </div>
     )
 
