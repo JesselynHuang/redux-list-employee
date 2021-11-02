@@ -2,8 +2,10 @@
 import {combineReducers} from 'redux';
 import employees from './app';
 
+import app from './app';
 const appReducer = combineReducers({
-    employees : employees
+    employees : employees,
+    app
 });
 
 export const rootReducer = (state, action) => {
