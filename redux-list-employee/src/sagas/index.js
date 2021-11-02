@@ -1,5 +1,5 @@
 import { fork } from 'redux-saga/effects';
-import { watchAddEmp } from './app';
+import { myAPI, watchAddEmp } from './app';
 
 //File index ---> file parent
 //yield --> generator function & return new value
@@ -7,5 +7,6 @@ import { watchAddEmp } from './app';
 export default function* rootSaga() {
     yield [
         yield fork(watchAddEmp),
+        yield fork(myAPI)
     ];
 }

@@ -13,12 +13,12 @@ const initialState = [];
 const app = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.ADD_EMPLOYEE:
-            // Object.assign({}, action.name)
-            // return state.set('name', action.args);
             return [
                 ...state, // ... --> spread attributes
                 Object.assign({}, action.employee)
             ];
+        case actionTypes.GET_USERS_SUCCESS:
+            return { ...state, users: action.users}
         default:
             return state;
     }

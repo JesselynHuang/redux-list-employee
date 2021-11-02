@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { TextField, 
-        Button, 
-        List,
-        ListItem
-        } 
-from '@material-ui/core';
+import {
+    TextField,
+    Button,
+    List,
+    ListItem
+}
+    from '@material-ui/core';
 import * as actionCreateEmp from '../actions/create_emp';
 import { connect } from 'react-redux';
+
 
 class Home extends Component {
     constructor(props) {
@@ -35,7 +37,6 @@ class Home extends Component {
         console.log(this.state.name);
     }
 
-
     render() {
         //const { name } = props;
         return (
@@ -44,11 +45,11 @@ class Home extends Component {
                 <hr />
                 <List>
                     <ListItem disablePadding>
-                    {<ul>
-                        {this.props.employees.map(
-                            (employee, i) => <li key={i}>{employee.name}</li>)
-                        }
-                    </ul>}
+                        {<ul>
+                            {this.props.employees.map(
+                                (employee, i) => <li key={i}>{employee.name}</li>)
+                            }
+                        </ul>}
                     </ListItem>
                 </List>
 
